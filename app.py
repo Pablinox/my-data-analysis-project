@@ -4,7 +4,9 @@ import streamlit as st
 
 car_data = pd.read_csv("vehicles_us.csv")
 
-st.header('Graficos con infromacion importante de vehiculos')
+st.header('Graficos con informacion de vehiculos')
+
+st.write('elige el tipo de grafico que deseas visualizar')
 
 hist_button = st.button('histograma de los kilómetros recorridos')
 if hist_button:
