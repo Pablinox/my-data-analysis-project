@@ -6,7 +6,7 @@ car_data = pd.read_csv("vehicles_us.csv")
 
 st.header('Graficos con infromacion importante de vehiculos')
 
-hist_button = st.button('Construir histograma')
+hist_button = st.button('Construir histograma de los kilómetros recorridos')
 if hist_button:
     st.write('Histograma de los kilómetros recorridos')
     fig = px.histogram(car_data, x='odometer')
