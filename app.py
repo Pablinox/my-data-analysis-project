@@ -8,7 +8,7 @@ st.header('Graficos con informacion de vehiculos')
 
 st.write('Elige el tipo de grafico que deseas visualizar')
 
-hist_button = st.button('histograma de los kilómetros recorridos')
+hist_button = st.button('Histograma de los kilómetros recorridos')
 if hist_button:
     st.write('Histograma de los kilómetros recorridos')
     fig = px.histogram(car_data, x='odometer')
