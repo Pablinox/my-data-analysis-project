@@ -12,13 +12,14 @@ if hist_button:
     fig = px.histogram(car_data, x='odometer')
     st.plotly_chart(fig)
 
-scatter_button = st.button('Construir gráfico de dispersión')
+scatter_button = st.button(
+    'Construir gráfico de dispersión precio vs kilómetros recorridos')
 if scatter_button:
     st.write('Gráfico de dispersión de precio vs kilómetros recorridos')
     fig = px.scatter(car_data, x='odometer', y='price')
     st.plotly_chart(fig)
 
-scatter_button = st.button('Construir gráfico de dispersión')
+scatter_button = st.button('Construir gráfico de dispersión precio vs Modelo')
 if scatter_button:
     st.write('Gráfico de dispersión de precio vs Modelo')
     fig = px.scatter(car_data, x='model_year', y='price')
